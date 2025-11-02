@@ -1,0 +1,11 @@
+apiVersion: fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: demo-2-kustomize
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref: 
+    branch: 2-demo
+  url: https://github.com/nikhila10win-wq/bb-app-source
+  interval: 1m
